@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: url("../img/StartAndFinish.jpeg");
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.blur-img {
+    filter: blur(5px);
+    transition: 1s;
+}
+
+.blur-img:hover {
+    filter: blur(0);
+}
+
+#menu ul li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#menu ul li a {
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: stretch;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 50px 0;
+    z-index: 4;
+}
+
+#menu ul li a:hover {
+    transition: border-bottom-width 200ms;
+    border-bottom: 2px solid white;
+}
+
+
+section {
+    margin: 200px auto;
+}
+
+section#heading p {
+    font-size: 48px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+
+section#heading p span {
+    font-weight: bold;
+}
+
+section#works .item {
+    height: 500px;
+    width: 330px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#works .item h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 900;
+    color: #666666;
+}
+
+section#works .item p {
+    width: 290px;
+    text-align: center;
+    margin: 25px 0;
+    line-height: 25px;
+}
+
+button[class="read-more"] {
+    background: transparent;
+    border: 1px solid #666666;
+    border-radius: 24px;
+    height: 48px;
+    width: 170px;
+    color: #666666;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+button[class="read-more"]:hover {
+    transition: 1s;
+    color: white;
+    background: #094500;
+}
+
+button[class="read-more"]:focus {
+    color: white;
+    outline: none;
+    background: #094500;
+    box-shadow: 0 0 16px #0b5500;
+}
+
+section#works {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+section#about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: stretch;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.heading-two {
+    font-size: 50px;
+    color: #104400;
+}
+
+section#about-us .item p {
+    font-size: 18px;
+    color: #6f6f6f;
+}
+
+section#about-us img {
+    height: 100%;
+}
+
+section#our-project {
+    padding: 0;
+}
+
+section#our-project .items-img {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section#our-project .items-img img {
+    filter: blur(3px);
+    transition: 1s;
+    height: 100%;
+    width: 100%;
+}
+
+section#our-project .items-img img:hover {
+    filter: blur(0);
+}
+
+
+section#solutions .content .item {
+    width: 400px;
+    height: 200px;
+}
+
+section#solutions .content .item h3 {
+    font-size: 30px;
+}
+
+section#solutions .content .item p {
+    font-size: 18px;
+    color: #6f6f6f;
+}
+
+section#solutions .content {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: space-between;
+}
+
+section#review .container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    height: 500px;
+}
+
+section#review {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url("../img/review-1.jpg");
+    background-position: right;
+    background-size: 800px 100%;
+}
+
+section#review .item {
+    width: 500px;
+}
+
+section#review .item p {
+    color: #6f6f6f;
+    font-size: 18px;
+    text-align: end;
+}
+
+section#review .item p span {
+    font-family: "Times New Roman";
+    font-size: 80px;
+}
+
+section#review .item .user {
+    color: black;
+    font-weight: bold;
+}
+
+section#news-and-events .content .item {
+    width: 370px;
+    height: 200px;
+}
+
+section#news-and-events .content .item .date {
+    display: grid;
+    height: 146px;
+    grid-template-columns: repeat(2, auto);
+
+}
+
+section#news-and-events .content .item .date h1 {
+    color: #6f6f6f;
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 120px;
+    margin: 40px 0;
+    line-height: 40px;
+}
+
+section#news-and-events .content .item .date h1 span {
+    font-size: 40px;
+}
+
+section#news-and-events .content .item .date p {
+    font-size: 24px;
+    margin-top: 50px;
+    font-weight: 900;
+    color: black;
+}
+
+section#news-and-events .content .item p {
+    color: #6f6f6f;
+    font-size: 18px;
+}
+
+section#news-and-events .content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns:repeat(3, auto);
+}
+
+footer {
+    height: 400px;
+    background-image: url("../img/StartAndFinish.jpeg");
+    margin: 0;
+    overflow: hidden;
+}
+
+footer .container {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.items-information .item {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.items-information .item p {
+    color: white;
+}
+
+.items-information {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+footer .container .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+
+footer .container .social button {
+    border: none;
+    background: transparent;
+}
+
+#bottom-button {
+    align-self: end;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -10px;
+}
+
+button[id="button-phone"] {
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-device-width: 900px) {
+    button[id="button-phone"] {
+        display: inline;
+        border: none;
+        background-color: transparent;
+    }
+
+    header {
+        height: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        grid-row-start: row1-start;
+        grid-row-end: 2;
+        display: none;
+    }
+
+    #menu ul {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: stretch;
+        border-top: 2px solid white;
+    }
+
+    #menu ul li a {
+        color: white;
+        font-size: 40px;
+        font-family: "Montserrat-Regular";
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    #menu ul li {
+        margin: 50px 0;
+    }
+
+    section#works {
+        height: 2600px;
+        grid-template-columns: auto;
+        align-content: space-between;
+        justify-content: center;
+    }
+
+    section#works .item {
+        height: 800px;
+        width: 630px;
+    }
+
+    section#works .item h2 {
+        font-size: 50px;
+    }
+
+    section#works .item p {
+        width: 590px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    section#works .item img {
+        height: 200px;
+    }
+
+    button[class="read-more"] {
+        height: 70px;
+        width: 220px;
+        font-size: 26px;
+    }
+
+    section#about-us {
+        height: 1200px;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 600px);
+    }
+
+    section#about-us .item p {
+        font-size: 30px;
+    }
+
+    section#our-project .items-img {
+        height: 1600px;
+        grid-template-columns: auto;
+    }
+
+    section#solutions .content {
+        height: 1300px;
+        grid-template-columns: auto;
+        justify-content: space-between;
+    }
+
+    section#solutions .content .item {
+        width: 100%;
+        height: 200px;
+    }
+
+    section#solutions .content .item h3 {
+        font-size: 40px;
+    }
+
+    section#solutions .content .item p {
+        font-size: 30px;
+        color: #6f6f6f;
+    }
+
+    .heading-two {
+        font-size: 70px;
+    }
+
+    section#review {
+        margin: 0;
+        height: 1300px;
+        background-position: bottom;
+        background-size: 100% 600px;
+    }
+
+    section#review .item {
+        width: 100%;
+    }
+
+    section#review .item p {
+        font-size: 30px;
+    }
+
+    section#review .container {
+        display: grid;
+        grid-template-columns: auto;
+        height: 500px;
+    }
+
+    section#review .item button {
+        margin-left: 70%;
+    }
+
+    section#news-and-events .content {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns:auto;
+    }
+
+    section#news-and-events .content .item {
+        width: 100%;
+        height: 600px;
+    }
+
+    section#news-and-events .content .item .date p {
+        font-size: 40px;
+        margin-top: 50px;
+        font-weight: 900;
+        color: black;
+    }
+
+    section#news-and-events .content .item .date h1 {
+        text-align: center;
+    }
+
+    section#news-and-events .content .item p {
+        color: #6f6f6f;
+        font-size: 30px;
+    }
+}
